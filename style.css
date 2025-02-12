@@ -109,8 +109,8 @@ body {
     width: 8vmin;
     height: 11vmin;
     border-radius: 51% 49% 47% 53% / 44% 45% 55% 69%;
-    background-color: #a7ffee;
-    background-image: linear-gradient(to top, #54b8aa, #a7ffee);
+    background-color: #a7ffab;
+    background-image: linear-gradient(to top, #d63982, #d63982);/* cor das pétalas*/ 
     transform-origin: bottom center;
     opacity: 0.9;
     box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5); }
@@ -126,7 +126,7 @@ body {
       transform-origin: bottom left;
       border-radius: 4vmin 10vmin 4vmin 4vmin;
       transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
-      background-image: linear-gradient(to top, #39c6d6, #a7ffee);
+      background-image: linear-gradient(to top, #d63982, #d63982); /* cor das pétalas*/ 
       z-index: 1;
       opacity: 0.8; }
   .flower__white-circle {
@@ -136,7 +136,7 @@ body {
     width: 9vmin;
     height: 4vmin;
     border-radius: 50%;
-    background-color: #fff; }
+    background-color: #da8e9e; } /*cor do broto*/ 
     .flower__white-circle::after {
       content: "";
       position: absolute;
@@ -193,12 +193,12 @@ body {
     bottom: 0vmin;
     width: 1vmin;
     height: 1vmin;
-    background-color: #fffb00;
+    background-color: #ff0080; /*cor dos poros saindo*/
     border-radius: 50%;
     filter: blur(0.2vmin);
-    animation: light-ans 4s linear infinite backwards; }
+    animation: light-ans 5s linear infinite backwards; }
     .flower__light:nth-child(odd) {
-      background-color: #23f0ff; }
+      background-color: #da23ff; } /*cor dos poros saindo*/
     .flower__light--1 {
       left: -2vmin;
       animation-delay: 1s; }
@@ -237,14 +237,14 @@ body {
     transform: rotate(-48deg) rotateY(40deg); }
     .flower__grass--1 {
       animation: moving-grass 2s linear infinite; }
-    .flower__grass--2 {
+    .flower__grass--2 { /*folhas ao redor da flor*/
       left: 2vmin;
       bottom: 10vmin;
       transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
       opacity: 0.8;
       z-index: 0;
       animation: moving-grass--2 1.5s linear infinite; }
-    .flower__grass--top {
+    .flower__grass--top { /* folha grande atras da flor*/
       width: 7vmin;
       height: 10vmin;
       border-top-right-radius: 100%;
@@ -271,7 +271,7 @@ body {
         --size: 6vmin;
         transform: rotate(-20deg);
         animation: growing-grass-ans--1 2s 2.6s backwards; }
-@keyframes growing-grass-ans--1 {
+/*@keyframes growing-grass-ans--1 {
   0% {
     transform-origin: bottom left;
     transform: rotate(-20deg) scale(0); } }
@@ -280,7 +280,7 @@ body {
         left: -110%;
         --size: 6vmin;
         transform: rotate(10deg);
-        animation: growing-grass-ans--2 2s 2.4s linear backwards; }
+        animation: growing-grass-ans--2 2s 2.4s linear backwards; }*/
 @keyframes growing-grass-ans--2 {
   0% {
     transform-origin: bottom right;
@@ -351,7 +351,7 @@ body {
       right: 0%;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.089);
       filter: blur(1.5vmin);
       z-index: 100; }
   .flower__g-long {
@@ -772,7 +772,7 @@ body {
 .growing-grass {
   animation: growing-grass-ans 1s 2s backwards; }
 
-@keyframes growing-grass-ans {
+@keyframes growing-grass-ans { /* caule atrás da flor, fazer crescer*/
   0% {
     transform: scale(0); } }
 .not-loaded * {
